@@ -6,9 +6,9 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
-
-    run:
-      working-directory: ./docs
+defaults:
+  run:
+    working-directory: ./docs
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
